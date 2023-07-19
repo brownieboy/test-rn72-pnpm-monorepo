@@ -43,6 +43,4 @@ A problem occurred evaluating settings 'app1'.
 > Could not read script '/Users/michaelbrown/Development/test-rn72-pnpm-monorepo/apps/app1/node_modules/@react-native-community/cli-platform-android/native_modules.gradle' as it does not exist.
 ```
 
-These are, I think, manifestations of the same issue.   React Native is not following PNPM's symlinks, even with the experimental symlink support enabled.
-
-react-native *is* in the apps/app1/node_modules folder, although it's a symlink.
+`react-native` *is* in the apps/app1/node_modules folder, although it's a symlink.  That android/settings.gradle file also is there, and not as a symlink this time.
