@@ -30,7 +30,7 @@ error: Error: Unable to resolve module react-native from /Users/michaelbrown/Dev
   7 | import {name as appName} from './app.json';
 ```
 
-`yarn android` will fail with this error:
+`pnpm android` will fail with this error:
 
 ```bash
 FAILURE: Build failed with an exception.
